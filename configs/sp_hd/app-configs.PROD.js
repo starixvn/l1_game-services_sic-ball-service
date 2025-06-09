@@ -2,8 +2,8 @@ export default {
     hostingPort: 5000,
     apiSettings: {
         enabledApi: true,
-        apiUrl: "http://gn_game_api_prod:5000",
-        authUrl: "http://gn_auth_api_prod:5000",
+        apiUrl: "http://sp_hd_game_api_prod:5000",
+        authUrl: "http://sp_hd_auth_api_prod:5000",
         client: {
             id: "game-server",
             secret: "gameserver@20luminet&",
@@ -22,21 +22,21 @@ export default {
     },
     enabledLogs: true,
     database: {
-        url: "mongodb://lmn_backend:Q74~T0vK6%25gMO%3AII%60L%5DMxc%2CR%5E%28IhxpAt@10.99.99.53:39410,10.99.99.54:39410,10.99.99.188:39410,10.99.99.187:39410/?replicaSet=SN-Main&appName=SicBall",
+        url: "mongodb://hotdog_backend:%3FD%60XWko0ZI99Y2PQ%5Eu%2E9LV%2BYv%2Emj6rhH@10.99.99.53:39510,10.99.99.54:39510,10.99.99.188:39510,10.99.99.187:39510/?replicaSet=SP-Main&appName=SicBall",
         options: {
-            dbName: "minigame",
+            dbName: "hotdog_minigame",
             useNewUrlParser: true,
             useUnifiedTopology: true,
             auto_reconnect: true,
         },
     },
     sentry: {
-        sentryUrl: "http://f457113be82441879a991096fce8c26c@10.2.189.50:9009/172",
+        sentryUrl: "https://f4980024f65945179a125e7ce17286d0@sentry.sabagame.com/178",
         logIdentifier: "SicBall",
         env: "prod",
     },
     authenticateSettings: {
-        url: "http://gn_auth_api_prod:5000",
+        url: "http://sp_hd_auth_api_prod:5000",
         id: "game-services",
         secret: "gameservices@20luminet&",
         requestTimeout: 10000,
@@ -44,7 +44,7 @@ export default {
         audiences: ["api", "admin-api"],
     },
     userServiceSettings: {
-        url: "http://gn_user_service_prod:5000",
+        url: "http://sp_hd_user_service_prod:5000",
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
     metrics: {
@@ -53,7 +53,7 @@ export default {
     },
     enableMsgpackParser: true,
     gameManagementApiSettings: {
-        BASE: "http://gn_game_management_service_prod:5000",
+        BASE: "http://sp_hd_game_management_service_prod:5000",
     },
     disableCors: false,
 };
