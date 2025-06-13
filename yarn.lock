@@ -7123,10 +7123,10 @@ sc-instrument@1.1.1-beta.2:
     opentelemetry-instrumentation-socket.io "0.34.0"
     socket.io "4.6.1"
 
-sc-number-game-base@1.1.3-beta.2:
-  version "1.1.3-beta.2"
-  resolved "https://npm.lumigame.com/sc-number-game-base/-/sc-number-game-base-1.1.3-beta.2.tgz#f50ab6d1c2a6609432b0c7cd979387a55645eda8"
-  integrity sha512-C2f6JlvDcABhGE5LwpsZallm16KSchISBlsuyNCUXT2dxUOKJE1kr81wcjp6GtUF4Eg6DZxSAtJ9iT1D4T8HVg==
+sc-number-game-base@1.1.4-hotdog:
+  version "1.1.4-hotdog"
+  resolved "http://npm.lumigame.com/sc-number-game-base/-/sc-number-game-base-1.1.4-hotdog.tgz#4ddeabe930011cef7560d97728e127f90fac0dc3"
+  integrity sha512-kVFJldpcSmEFxIjSHEKIeuns0JaRqwy/J01gYTSaMh40jN1pQdeHhi5Wd+nipIoEoMWHraxhOgJKz1tsIOF3dg==
   dependencies:
     awilix "^8.0.0"
     chance "1.1.6"
