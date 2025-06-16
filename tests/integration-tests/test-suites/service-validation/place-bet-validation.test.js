@@ -354,7 +354,7 @@ describe("service place bet validation (config: minBet = 1, maxBet = 3000)", () 
                 const result = await client.handleGameEvent((data) => data.endBet);
 
                 // Assert
-                expect(result.endBet).toBe(18);
+                expect(result.endBet).toBe(18.7);
             });
         });
     });

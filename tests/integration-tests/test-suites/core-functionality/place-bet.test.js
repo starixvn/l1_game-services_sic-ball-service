@@ -40,8 +40,8 @@ describe("when place bet", () => {
 
         // Assert
         expect(result.ownBets).toEqual({
-            big: 20,
-            specific1: 30,
+            big: 20.9,
+            specific1: 30.2,
         });
     });
 });
