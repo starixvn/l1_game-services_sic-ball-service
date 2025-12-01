@@ -5,6 +5,7 @@ const modelName = "sicball_rounds";
 export type DrawResult = {
     drawId: number;
     balls: number[];
+    time: Date;
 };
 
 const resultSchema = new mongoose.Schema<DrawResult>(

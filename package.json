@@ -30,8 +30,14 @@
         "chance": "1.1.6",
         "extensionless": "^1.9.6",
         "mongoose": "^5.9.25",
-        "sc-game-base": "5.1.0",
+        "sc-game-base": "5.4.1-hotdog-1",
         "sc-number-game-base": "1.1.4-hotdog"
+    },
+    "resolutions": {
+        "sc-game-base": "5.4.1-hotdog-1",
+        "mongoose": "6.13.6",
+        "form-data": "4.0.4",
+        "sc-common": "2.0.0"
     },
     "devDependencies": {
         "@babel/preset-env": "^7.23.9",

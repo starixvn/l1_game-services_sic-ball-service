@@ -1,61 +1,60 @@
 export default {
-  hostingPort: 5000,
-  apiSettings: {
-    enabledApi: true,
-    apiUrl: "http://gn-game-api-local-service:5000",
-    authUrl: "http://gn-auth-api-local-service:5000",
-    client: {
-      id: "game-server",
-      secret: "gameserver@20luminet&",
+    hostingPort: 5000,
+    apiSettings: {
+        enabledApi: true,
+        apiUrl: "http://gn-game-api-local-service:5000",
+        authUrl: "http://gn-auth-api-local-service:5000",
+        client: {
+            id: "game-server",
+            secret: "gameserver@20luminet&",
+        },
+        useAuthenticate: true,
+        requestTimeout: 10000,
+        placeBetTimeout: 2000,
+        enabledApiLogs: true,
     },
-    useAuthenticate: true,
-    requestTimeout: 10000,
-    placeBetTimeout: 2000,
-    enabledApiLogs: true,
-  },
-  socketOptions: {
-    pingInterval: 60 * 1000,
-    pingTimeout: 60 * 1000,
-    transports: ["websocket"],
-    allowUpgrades: false,
-    perMessageDeflate: false,
-    maxRequestsPerInterval: 100, // default 1000
-    rateLimitInterval: 10 * 1000, // default 10 * 1000
-  },
-  enabledLogs: true,
-  database: {
-    url: "mongodb://mongo:27017",
-    options: {
-      dbName: "game-service-test-db",
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      auto_reconnect: true,
+    socketOptions: {
+        pingInterval: 60 * 1000,
+        pingTimeout: 60 * 1000,
+        transports: ["websocket"],
+        allowUpgrades: false,
+        perMessageDeflate: false,
+        maxRequestsPerInterval: 100, // default 1000
+        rateLimitInterval: 10 * 1000, // default 10 * 1000
     },
-  },
-  sentry: {
-    sentryUrl: "https://3711f3082699411a8716a3221ca1fd9e@sentry.lumigame.com/89",
-    logIdentifier: "SeBall-integration-test-ci",
-    env: "LOCAL",
-  },
-  authenticateSettings: {
-    url: "https://auth.lumigame.com",
-    id: "game-services",
-    secret: "gameservices@20luminet&",
-    requestTimeout: 3000,
-    useAuthenticate: false,
-    audiences: ["api", "admin-api"],
-  },
-  userServiceSettings: {
-    url: "http://127.0.0.1:5000",
-  },
-  adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
-  metrics: {
-    enable: true,
-    secretKey: "6c1f0f28-70f2-46ae-b031-22624a6cd8df",
-  },
-  enableMsgpackParser: false,
-  gameManagementApiSettings: {
-    BASE: "http://gn-game-management-service-local-service:5000",
-  },
-  disableCors: true,
+    enabledLogs: true,
+    database: {
+        url: "mongodb://mongo:27017",
+        options: {
+            dbName: "game-service-test-db",
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+        },
+    },
+    sentry: {
+        sentryUrl: "https://3711f3082699411a8716a3221ca1fd9e@sentry.lumigame.com/89",
+        logIdentifier: "SeBall-integration-test-ci",
+        env: "LOCAL",
+    },
+    authenticateSettings: {
+        url: "https://auth.lumigame.com",
+        id: "game-services",
+        secret: "gameservices@20luminet&",
+        requestTimeout: 3000,
+        useAuthenticate: false,
+        audiences: ["api", "admin-api"],
+    },
+    userServiceSettings: {
+        url: "http://127.0.0.1:5000",
+    },
+    adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
+    metrics: {
+        enable: true,
+        secretKey: "6c1f0f28-70f2-46ae-b031-22624a6cd8df",
+    },
+    enableMsgpackParser: false,
+    gameManagementApiSettings: {
+        BASE: "http://gn-game-management-service-local-service:5000",
+    },
+    disableCors: true,
 };
